@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser.add_argument('file')
     filename = parser.parse_args().file
     key = argparse.ArgumentParser(description="Application credentials")
-    parser.add_argument('key')
+    key.add_argument('key')
     keyfile = parser.parse_args().key
     project_id = os.getenv("PROJECT_ID")
     secret_id = os.getenv("SECRET_ID")
