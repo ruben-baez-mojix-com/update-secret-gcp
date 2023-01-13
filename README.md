@@ -6,7 +6,7 @@ This GitHub action allows you to update secrets on GCP
 
 ```yml
 - name: update secret
-  uses: ruben-baez-mojix-com/update-secret-gcp@1.0.0
+  uses: ruben-baez-mojix-com/update-secret-gcp@v1.0.0
   with:
     file: env_config
     key: ${{ secrets.SECRET_KEY }}
