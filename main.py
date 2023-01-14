@@ -11,7 +11,7 @@ def main(filename, project_id, secret_id, keyfile):
     decoded_key = base64.b64decode(keyfile)
     decoded_str = decoded_key.decode("ascii")
     final_key = json.loads(decoded_str)
-    credentials = service_account.Credentials.from_service_account_file(final_key)
+    credentials = service_account.Credentials.from_service_account_info(final_key)
     with open(filename, 'rb') as file:
         print(f"Updating {filename}..")
         data = file.read()
