@@ -17,7 +17,7 @@ This GitHub action allows you to update secrets on GCP
 
 **Required Parameters:**
 
-- `file`: File with secret content to be updated
+- `path`: File with secret content to be updated
 
 **Environmetal variables:**
 
