@@ -2,21 +2,15 @@ name: "Update GCP secrets"
 author: "Mojix Inc"
 description: "Update GCP secrets"
 inputs:
-  file:
+  path:
     description: "The file to upload"
     required: true
-  # key:
-  #   description: "The service account key"
-  #   required: true
 outputs:
   message:
     description: "output description"
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.file }}
-    # - ${{ inputs.key }}
 branding:
   color: "red"
   icon: "share"
