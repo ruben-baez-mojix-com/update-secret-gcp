@@ -5,6 +5,7 @@ This GitHub action allows you to update secrets on GCP
 ## Usage
 
 ```yml
+- uses: actions/checkout@v3
 - name: update secret
   uses: ruben-baez-mojix-com/update-secret-gcp@v1.0.0
   with:
